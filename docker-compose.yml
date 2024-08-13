@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  postgresdb:
+    image: postgres
+    environment:
+      POSTGRES_USER: ${DEV_DB_USER}
+      POSTGRES_PASSWORD: ${DEV_DB_PASS}
+      POSTGRES_DB: ${DEV_DB_NAME}
+    ports:
+      - '5432:5432'
+    volumes:
+      - knights-data:/var/lib/postgresql/data
+
+  node-app:
+    image: tetobobo/knights-be-app:latest
+    container_name: backend
+    env_file:
+      - ./.env
+    ports:
+      - ${BE_PORT}:${BE_PORT}
+    depends_on:
+      - postgresdb
+
+  knights-frontend:
+    container_name: frontend
+    build: .
+    image: knights-fe:1.0
+    env_file:
+      - ./.env
+    ports:
+      - ${PREVIEW_PORT}:${PREVIEW_PORT}
+    depends_on:
+      - node-app
+
+volumes:
+  knights-data:
