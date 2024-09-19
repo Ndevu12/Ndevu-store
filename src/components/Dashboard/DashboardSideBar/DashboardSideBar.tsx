@@ -43,7 +43,7 @@ const DashboardSideBar: React.FC<DashboardSideBarProps> = ({ openNav, setOpenNav
         to={'/' + decodedToken?.role.toLowerCase() + '/dashboard'}
         className=" text-xl lg:text-2xl font-bold text-primary py-2"
       >
-        Knights
+        NDEVU STORE
       </NavLink>
       <button onClick={() => setOpenNav(false)} className="md:hidden absolute right-4 top-6">
         <CircleX />

@@ -11,7 +11,7 @@ function Footer() {
         <div className="flex flex-col items-start justify-start gap-y-6 pb-10">
           <h1 className="flex items-end justify-start gap-x-1 xmd:gap-x-2 text-primary capitalize font-medium text-lg xmd:text-xl leading-4">
             <img src={logo} alt="" />
-            KNIGHTS STORE
+            NDEVU STORE
           </h1>
 
           <div className="flex items-start justify-start gap-x-6">
@@ -30,7 +30,7 @@ function Footer() {
             </a>
 
             <a
-              href="mailto:knights@andela.com"
+              href="mailto:jeanpaulelissa99@gmail.com"
               className="w-[27px] h-[27px] md:w-[40px] md:h-[40px] border border-grey3 p-1"
             >
               <img src={gmail} alt="" className="w-full h-full" />
@@ -44,16 +44,16 @@ function Footer() {
           </h2>
           <div className="flex flex-col gap-y-1 text-xs text-grey2">
             <p>Kigali-Rwanda</p>
-            <p>Gasabo, Kimironko</p>
-            <p>Tel No: +250780288777</p>
-            <p>Email: knights@andela.com</p>
+            <p>Kicukiro, Gikondo</p>
+            <p>Tel No: +250785044398</p>
+            <p>Email: ndevulion@gmail.com</p>
           </div>
         </div>
       </div>
       <hr className="w-[95%] xmd:w-[80%] h-[2px] bg-grey3" />
       <div className="w-full flex items-center justify-center">
         <p className="text-primary text-sm md:text-base">
-          © {new Date().getFullYear()} Knights Store. All Rights Reserved.
+          © {new Date().getFullYear()} NDEVU Store. All Rights Reserved.
         </p>
       </div>
     </div>

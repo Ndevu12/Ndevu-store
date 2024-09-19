@@ -25,7 +25,7 @@ const DashboardProducts: React.FC = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    if (products?.data.products.length) {
+    if (products?.data.products?.length) {
       let soldOut = 0;
       products?.data.products.forEach((product) => {
         if (product.quantity < 1) {

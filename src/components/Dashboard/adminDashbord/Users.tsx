@@ -193,7 +193,7 @@ function Users() {
         <div className="flex flex-col gap-8 p-6 rounded-xl bg-white border-2 ">
           <div className="flex gap-4 ml-auto h-10">
             <div className="flex px-3 py-1 rounded-lg border border-[#d1d1d1] gap-2">
-              <img className="w-[22px]" src={searchIcon} />
+              <img className="w-[22px]" src={searchIcon} alt="Search icon" />
               <input
                 type="text"
                 data-testid="search-input"

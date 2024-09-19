@@ -70,7 +70,7 @@ function Navbar() {
         className="cursor-pointer flex items-center justify-start gap-x-2 text-primary capitalize font-medium text-xl"
       >
         <img src={knightsLogo} alt="Knights Store Logo" />
-        KNIGHTS STORE
+        NDEVU STORE
       </h1>
 
       <NotificationLayout />

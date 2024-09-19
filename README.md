@@ -56,14 +56,3 @@ This repository contains the frontend application for the E-commerce project, pr
   ```
   npm run test
   ```
-
-## Authors
-
-- [Maxime Mizero](https://github.com/maxCastro1)
-- [Elie Kuradusenge](https://github.com/elijahladdie)
-- [Byishimo Teto Joseph](https://github.com/MC-Knight)
-- [Grace Uwicyeza](https://github.com/UwicyezaG)
-- [Iragena Aime Divin](https://github.com/aimedivin)
-- [Gloria Niyonkuru Sinseswa](https://github.com/GSinseswa721)
-- [Jean Paul Elisa Ndevu](https://github.com/Ndevu12)
-- [Gisa Mugisha Caleb Pacifique](https://github.com/Calebgisa72)

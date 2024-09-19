@@ -16,7 +16,7 @@ import DashboardLayout from '../layout/DashboardLayout';
 import DashboarInnerLayout from '../layout/DashboarInnerLayout';
 import DashboardProducts from '../components/Products/DashboardProducts/DashboardProducts';
 import DashboardSingleProduct from '../components/Products/DashboardSingleProduct/DashboardSingleProduct';
-import DashboardNewProducts from '../components/Products/DashboardNewProducts/DashboardNewProducts';
+// import DashboardNewProducts from '../components/Products/DashboardNewProducts/DashboardNewProducts';
 import MainLayout from '../layout/MainLayout';
 import Home from '../pages/LandingPage/Home';
 import SearchPage from '../pages/searchPage';
@@ -42,6 +42,7 @@ import SingleAdminOrder from '../pages/Orders/SingleAdminOrder';
 import { JSX } from 'react/jsx-runtime';
 import GoogleLogin from '../pages/Authentication/GoogleLogin';
 import Transctions from '../pages/Transactions/Transctions';
+import DashboardNewProducts from '../components/Products/DashboardNewProducts/DashboardNewProducts';
 
 const Router = () => {
   const { userToken } = useSelector((state: RootState) => state.auth);
@@ -77,7 +78,7 @@ const Router = () => {
           <>
             {!isAdmin && !isVendor ? (
               <MainLayout>
-                <PageTitle title="Knights Store" />
+                <PageTitle title="Ndevu Store" />
                 <Home />
               </MainLayout>
             ) : (
@@ -91,7 +92,7 @@ const Router = () => {
         path="/register"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Register" />
+            <PageTitle title="Ndevu Store | Register" />
             <Register />
           </MainLayout>
         }
@@ -101,7 +102,7 @@ const Router = () => {
         path="/register-vendor"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Register Vendor" />
+            <PageTitle title="Ndevu Store | Register Vendor" />
             <RegisterVendor />
           </MainLayout>
         }
@@ -111,7 +112,7 @@ const Router = () => {
         path="/verify-email/:token"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Verify Email" />
+            <PageTitle title="Ndevu Store | Verify Email" />
             <VerifyEmail />
           </MainLayout>
         }
@@ -121,7 +122,7 @@ const Router = () => {
         path="/forgot-password"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Forgot Password" />
+            <PageTitle title="Ndevu Store | Forgot Password" />
             <ForgotPassword />
             {conditionalNavigate('/admin/dashboard', '/vendor/dashboard', '/')}
           </MainLayout>
@@ -132,7 +133,7 @@ const Router = () => {
         path="/reset-password"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Reset Password" />
+            <PageTitle title="Ndevu Store | Reset Password" />
             <ResetPassword />
             {conditionalNavigate('/admin/dashboard', '/vendor/dashboard', '/')}
           </MainLayout>
@@ -143,7 +144,7 @@ const Router = () => {
         path="/login"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Login" />
+            <PageTitle title="Ndevu Store | Login" />
             {conditionalNavigate('/admin/dashboard/users', '/vendor/dashboard', '/')}
             {!userToken && <Login />}
           </MainLayout>
@@ -154,7 +155,7 @@ const Router = () => {
         path="/login/google-auth"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Login" />
+            <PageTitle title="Ndevu Store | Login" />
             {conditionalNavigate('/admin/dashboard', '/vendor/dashboard', '/')}
             {!userToken && <GoogleLogin />}
           </MainLayout>
@@ -165,7 +166,7 @@ const Router = () => {
         path="/suspended-account"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Suspended Account" />
+            <PageTitle title="Ndevu Store | Suspended Account" />
             {userToken && <Navigate to="/" />}
             <SuspendedAccount />
           </MainLayout>
@@ -176,7 +177,7 @@ const Router = () => {
         path="/otp-verification"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Verify OTP" />
+            <PageTitle title="Ndevu Store | Verify OTP" />
             <OtpPage />
             {conditionalNavigate('/admin/dashboard', '/vendor/dashboard', '/')}
           </MainLayout>
@@ -187,7 +188,7 @@ const Router = () => {
         path="/wishlist"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Wishlist" />
+            <PageTitle title="Ndevu Store | Wishlist" />
             {userToken ? <WishlistPage /> : <Navigate to="/" />}
           </MainLayout>
         }
@@ -197,7 +198,7 @@ const Router = () => {
         path="/profile"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Profile" />
+            <PageTitle title="Ndevu Store | Profile" />
             {userToken ? <DashboardAccount /> : <Navigate to="/" />}
           </MainLayout>
         }
@@ -207,7 +208,7 @@ const Router = () => {
         path="/search"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Search" />
+            <PageTitle title="Ndevu Store | Search" />
             <SearchPage />
           </MainLayout>
         }
@@ -217,7 +218,7 @@ const Router = () => {
         path="/product/:id"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | View Product" />
+            <PageTitle title="Ndevu Store | View Product" />
             <SingleProduct />
           </MainLayout>
         }
@@ -252,7 +253,7 @@ const Router = () => {
         path="/cart"
         element={
           <MainLayout>
-            <PageTitle title="Knights Store | Cart" />
+            <PageTitle title="Ndevu Store | Cart" />
             <Cart />
           </MainLayout>
         }
@@ -263,7 +264,7 @@ const Router = () => {
           path="/checkout"
           element={
             <MainLayout>
-              <PageTitle title="Knights Store | Create Order" />
+              <PageTitle title="Ndevu Store | Create Order" />
               {userToken && isBuyer ? <CheckOutMain /> : <Navigate to="/login" />}
             </MainLayout>
           }
@@ -272,7 +273,7 @@ const Router = () => {
           path="/completion"
           element={
             <MainLayout>
-              <PageTitle title="Knights Store | Payment successful" />
+              <PageTitle title="Ndevu Store | Payment successful" />
               <PaymentOk />
             </MainLayout>
           }
@@ -281,7 +282,7 @@ const Router = () => {
           path="/orders"
           element={
             <MainLayout>
-              <PageTitle title="Knights Store | Buyer  orders" />
+              <PageTitle title="Ndevu Store | Buyer  orders" />
               <BuyerOrders />
             </MainLayout>
           }
@@ -290,7 +291,7 @@ const Router = () => {
           path="/orders/:orderId"
           element={
             <MainLayout>
-              <PageTitle title="Knights Store | Orders" />
+              <PageTitle title="Ndevu Store | Orders" />
               {userToken && isBuyer ? (
                 <SingleBuyerOrder />
               ) : (
