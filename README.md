@@ -1,6 +1,6 @@
 # E-commerce Frontend
 
-[![knights-ecomm-fe CI](https://github.com/atlp-rwanda/knights-ecomm-fe/actions/workflows/ci.yml/badge.svg)](https://github.com/atlp-rwanda/knights-ecomm-fe/actions/workflows/ci.yml) &nbsp;&nbsp; [![Coverage Status](https://coveralls.io/repos/github/atlp-rwanda/knights-ecomm-fe/badge.svg?branch=develop)](https://coveralls.io/github/atlp-rwanda/knights-ecomm-fe?branch=develop)
+[![Ndevu-Store CI](https://github.com/atlp-rwanda/knights-ecomm-fe/actions/workflows/ci.yml/badge.svg)](https://github.com/atlp-rwanda/knights-ecomm-fe/actions/workflows/ci.yml) &nbsp;&nbsp; [![Coverage Status](https://coveralls.io/repos/github/atlp-rwanda/knights-ecomm-fe/badge.svg?branch=develop)](https://coveralls.io/github/atlp-rwanda/knights-ecomm-fe?branch=develop)
 
 ## Description
 
